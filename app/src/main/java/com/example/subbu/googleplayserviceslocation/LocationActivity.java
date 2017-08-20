@@ -123,6 +123,7 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
     @Override
     protected void onStop() {
         super.onStop();
+        // stop listening for location
         LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient,this);
     }
 
